@@ -17,6 +17,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        {/* <NavBar
+          navItems={[
+            { href: "/", title: "Summary" },
+            { href: "/payments", title: "Payments" },
+            { href: "/expenses", title: "Expenses" },
+            { href: "/users", title: "Users" },
+            { href: "/tasks", title: "Tasks" },
+          ]}
+        /> */}
         {children}
         <ScrollRestoration />
         <Scripts />
