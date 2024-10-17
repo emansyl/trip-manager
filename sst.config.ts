@@ -10,7 +10,7 @@ export default $config({
   },
   async run() {
     new sst.aws.Remix("MyWeb", {
-      domain: "ourtrip.info",
+      domain: $app.stage === "production" ? "ourtrip.info" : undefined,
     });
   },
 });
